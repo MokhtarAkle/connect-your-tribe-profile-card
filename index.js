@@ -1,3 +1,5 @@
+
+
 // Importeer express uit de node_modules map
 import express from 'express'
 
@@ -25,3 +27,4 @@ app.listen(app.get('port'), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
+
