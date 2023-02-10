@@ -3,8 +3,9 @@
 <div id="cardContainer">
   <article id="animationFront" class="check">
     <header>
-      <h1>Mokhtar Akle</h1>
-      <p><em>Beginnende Front-end Developer</em></p>
+      <h1> <%= member.name %>  <%= member.surname %></h1>
+      <p><em><%= member.bio.html %></em></p>
+    
       <button id="showCards">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 91"
           id="Layer_1" version="1.1" xml:space="preserve">
@@ -27,7 +28,7 @@
   <article id="frontBackside" class="check">
     <header>
       <h1>Achterkant</h1>
-      <p><em>Beginnende Front-end Developer</em></p>
+      <p><em><%= member.website %></em></p>
       <button id="showCards">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 91"
           id="Layer_1" version="1.1" xml:space="preserve">
@@ -68,3 +69,4 @@
 </div>
 
 <%- include('./partials/foot') %>
+
